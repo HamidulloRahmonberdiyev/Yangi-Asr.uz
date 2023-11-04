@@ -48,7 +48,8 @@ class PageResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('text_uz'),
+                Tables\Columns\TextColumn::make('text_uz')
+                    ->limit(50),
                 Tables\Columns\ToggleColumn::make('status')
                     ->sortable(),
             ])

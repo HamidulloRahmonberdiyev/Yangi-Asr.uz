@@ -52,10 +52,8 @@ class VideoResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')
                     ->sortable(),
-                Tables\Columns\ImageColumn::make('video_link')
-                    ->extraImgAttributes(fn (Model $record): array => [
-                    'alt' => "{$record->video_link}",
-                ]),
+                Tables\Columns\ViewColumn::make('video_link')
+                    ->view('tables.columns.youtube-video'),
                 Tables\Columns\ToggleColumn::make('status')
                     ->sortable(),
             ])
