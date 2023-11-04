@@ -26,7 +26,7 @@ return new class extends Migration
             $table->text('full_text_ru')->nullable();
             $table->text('full_text_en')->nullable();
             $table->string('photo')->nullable();
-            $table->integer('views_count');
+            $table->integer('views_count')->default(0);
             $table->integer('status')->default(0);
             $table->timestamps();
         });
