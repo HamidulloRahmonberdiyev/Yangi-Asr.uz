@@ -6,5 +6,5 @@ use Filament\Tables\Columns\Column;
 
 class YoutubeVideo extends Column
 {
-    protected string $view = 'tables.columns.youtube-video';
+    protected string $view = 'filament.tables.columns.youtube-video';
 }

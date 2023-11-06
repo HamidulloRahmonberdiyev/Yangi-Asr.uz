@@ -53,7 +53,7 @@ class VideoResource extends Resource
                 Tables\Columns\TextColumn::make('user.name')
                     ->sortable(),
                 Tables\Columns\ViewColumn::make('video_link')
-                    ->view('tables.columns.youtube-video'),
+                    ->view('filament.tables.columns.youtube-video'),
                 Tables\Columns\ToggleColumn::make('status')
                     ->sortable(),
             ])
